@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- senza DOCTYPE specificato il browser adotterà la quirks mode, ovvero la modalità stramba, 
+ dove ogni browser interpreta il codice a modo suo. 
+ Potrebbero nascere incongruenze con gli standard attuali di HTML5 
+ -->
+<html lang="it">
+<!-- html delimita il nostro documento -->
+
+<head>
+    <!-- qui dentro inseriremo delle meta-informazioni, questo è come se fosse un'area di configurazione della nostra pagina -->
+    <meta charset="UTF-8">
+    <meta description="La nostra prima pagina web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- questo meta viewport ci permette di impostare la scala iniziale al 100% per i dispositivi mobile,
+            altrimenti la pagina potrebbe venire tagliata e non scalare correttamente -->
+    <title>La nostra prima pagina Web</title>
+</head>
+
+<body>
+    <!-- in questo tag inseriamo l'effettiva struttura della pagina. 
+     quello che inseriamo qui dentro verrà effettivamente visto dall'utente, verrà renderizzato nella pagina -->
+
+    <ul>
+        <!-- link che portano ad altre pagine interne allo stesso progetto -->
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./contatti.html">Contatti</a></li>
+        <!-- link interni allo stesso documento, fanno riferimento ad id assegnati a determinati elementi,
+         l'utente verrà portato in basso fino a raggiungere l'elemento con quell'id -->
+        <li><a href="#block-element">Block element</a></li>
+        <li><a href="#inline-element">Inline element</a></li>
+        <li>item5</li>
+    </ul>
+    <!-- i tag che iniziano con h, sono i tag di titolo (heading) -->
+    <h1>Titolo principale della pagina</h1>
+    <h2>titolo secondario</h2>
+    <h3>titolo terziario</h3>
+    <h4>titolo quarto</h4>
+    <h5>titolo quinto</h5>
+    <h6>titolo sesto</h6>
+
+    <!-- tag di paragrafo -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, mollitia architecto aut impedit vel esse
+        provident numquam, quis suscipit voluptas ut amet id sint dolore labore inventore nostrum exercitationem
+        incidunt.</p>
+    <p>Unde dolores iure consequatur voluptates. Quia, fuga sunt maiores perspiciatis tempora nulla! Quisquam
+        exercitationem consequuntur ipsum suscipit nobis neque iure consectetur eveniet modi id nihil quod qui enim,
+        optio magnam!</p>
+    <p>Porro omnis cumque, culpa dolorum voluptas quod sit distinctio ad consequuntur eveniet nulla assumenda
+        reiciendis blanditiis, fugit enim autem, delectus illo? Debitis obcaecati repellat consectetur esse expedita
+        cumque minus nihil?</p>
+    <p>Et consequuntur animi libero vel repellat aspernatur praesentium nemo! Et quam deleniti labore non similique in
+        possimus assumenda. Ducimus cum delectus, excepturi perspiciatis officia cumque harum neque quia voluptates
+        cupiditate.</p>
+    <p>Fugiat tempora dolorem maxime accusamus, facilis soluta repellendus illum voluptas officia rerum, cumque magnam
+        vero corrupti similique culpa? Dignissimos quae vel culpa reiciendis fuga vero voluptates impedit possimus
+        laudantium aliquid.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum dignissimos quod velit porro ipsam,
+        adipisci repellat officia deserunt temporibus amet. Excepturi eum sunt non rem, esse aperiam eos blanditiis.
+        <br />
+        Aut aspernatur, quia voluptatibus nesciunt tenetur placeat nulla hic? Inventore est ex id. Fuga deleniti velit
+        ea quod eius doloribus, dolores corporis nobis accusamus iusto error reprehenderit fugiat iste aliquid.
+        <br />
+        Excepturi nobis a dolorem repellendus neque accusamus corporis deleniti autem sint reiciendis nihil repudiandae
+        debitis ipsam, rem ab! Consequuntur facilis harum debitis expedita mollitia molestiae nisi veritatis id totam
+        blanditiis!
+        <br />
+        Eius ducimus beatae, earum reiciendis officiis est vitae facere possimus impedit corporis, error tenetur dolorum
+        sint, veritatis minus harum cumque accusantium repellat incidunt. Quae deserunt aliquid officia quos numquam
+        est?
+        <br />
+        Ipsam sequi, architecto similique voluptatem cum aut officia maiores? Provident, voluptates earum porro dicta
+        libero autem soluta! Quis quos saepe id laborum. Dolorem corrupti repellat hic veniam. Ipsa, quod officiis!
+    </p>
+
+    <h3 id="block-element" title="occupano tutto lo spazio orizzontale">Tag di tipo blocco (block) — occupano tutto lo
+        spazio orizzontale
+        anche se il contenuto è breve</h3>
+    <p>Lorem, ipsum.</p>
+    <p>Lorem, ipsum.</p>
+
+    <h3 id="inline-element" title="occupa solo lo spazio del suo contenuto">Tag di tipo linea (inline) — occupa solo lo
+        spazio del suo
+        contenuto, tipicamente usati all'interno di un tag di
+        blocco</h3>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span>Lorem ipsum dolor sit amet.</span>
+
+    <h3>Elementi inlinea dentro ad un paragrafo:</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, <a href="#">adipisicing elit.</a> <span
+            style="background-color: palegoldenrod;">Quam similique</span> qui veniam
+        hic ipsa voluptatem, tenetur
+        quaerat amet
+    <p>alias sunt quos molestiae</p> sapiente animi magni repudiandae, dicta nihil expedita fugiat?
+    <mark>Doloribus expedita</mark> provident minima dicta. <strong>Adipisci soluta</strong> ad <b>cumque modi
+        repudiandae</b> itaque
+    molestias error
+    <em>aspernatur repellat amet?</em> <i>Excepturi commodi</i> <u>totam maiores</u> <ins>dolores pariatur</ins>,
+    <del>placeat eos eius</del>,
+    sunt
+    dolore
+    voluptate doloribus. <abbr title="Hyper Text Markup Language">HTML</abbr></p>
+
+    <code>
+        &iquest;Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, impedit.
+        per un paragrafo si usa&nbsp;il tag &lt;p&gt;&nbsp;
+    </code>
+    <hr>
+    <pre>
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Vero, cum.
+    </pre>
+
+    <h3>liste non ordinate</h3>
+    <!-- unordered list -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <h3>liste ordinate</h3>
+    <!-- ordered list -->
+    <ol>
+        <li>item </li>
+        <li>item </li>
+        <li>item </li>
+    </ol>
+
+    <h3> definition list</h3>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascade Style Sheet</dd>
+    </dl>
+
+    <h3>Immagini</h3>
+
+    <!-- immagine vettoriale - scalabili all'infinito -->
+    <img src="./user.svg" alt="user icon" width="200">
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+        y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="200"
+        height="200">
+        <g>
+            <circle cx="256" cy="128" r="128" />
+            <path
+                d="M256,298.667c-105.99,0.118-191.882,86.01-192,192C64,502.449,73.551,512,85.333,512h341.333   c11.782,0,21.333-9.551,21.333-21.333C447.882,384.677,361.99,298.784,256,298.667z" />
+        </g>
+    </svg>
+
+
+    <hr>
+    <!-- immagini raster - vincolate dalla risoluzione iniziale, se si va oltre l'immagine risulterà sgranata -->
+
+    <img src="./users-alt_16.png" alt="group of people" width="150">
+    <img src="./users-alt_512.png" alt="group of people" width="150">
+
+
+    <!-- esempio di link esterno con apertura in nuova scheda/finestra -->
+    <a href="https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-large-window-xiiX89sNvkc"
+        target="_blank">
+        <img src="https://images.unsplash.com/photo-1721614463453-051bd28367b1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="design, room" height="450">
+    </a>
+
+    <!-- ipertesto - link -->
+    <h4><a href="https://www.epicode.com" target="_blank">Epicode</a> is Awesome!</h4>
+
+    <!-- esempio di link interno che riporti l'utente in alto, all'inizio della pagina -->
+    <a href="#">Torna su</a>
+
+    <!-- vedi menu iniziale ad inizio documento per altri esempi di link -->
+</body>
+
+</html>
